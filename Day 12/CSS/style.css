@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hero-bg: #F3EED9;
+    --primary-bg: #222c2a;
+    --secondary-bg: #824936;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    color: var(--primary-bg);
+}
+
+h1, h2 {
+    font-family: 'Playfair-Display', serif;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+section + section {
+    padding: 5em 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1128px;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    color: var(--hero-bg);
+    margin-bottom: .5em;
+}
+
+.section-title--dark {
+    color: var(--secondary-bg);
+}
+
+.intro {
+    background: var(--hero-bg);
+    padding: 10em 0;
+    text-align: center;
+    color: var(--secondary-bg);
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+}
+
+.intro__text {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 10px;
+    color: var(--primary-bg);
+    margin-bottom: .5em;
+}
+
+.intro__title {
+    font-size: 3rem;
+}
+
+.section-three {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+.section-four {
+    background-color: var(--secondary-bg);
+    color: #fff;
+}
+
+@media (min-width: 800px) {
+    .row {
+        display: flex;
+        gap: 5em;
+    }
+
+    .col {
+        flex: 1;
+    }
+
+    .intro__title {
+        font-size: 3.75rem;
+    }
+}
